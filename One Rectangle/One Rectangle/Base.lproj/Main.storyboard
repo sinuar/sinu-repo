@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_Rectangle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-Fg-ZDr">
+                                <rect key="frame" x="117" y="41.5" width="662" height="331"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RiQ-Fg-ZDr" secondAttribute="height" multiplier="2:1" id="C6Z-Yy-kkq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="3JA-cg-nxo"/>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Irx-1I-ugT"/>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f61-jb-qMp"/>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jnW-Rr-pgx"/>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="lMA-Mq-3fG"/>
+                            <constraint firstItem="RiQ-Fg-ZDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pA8-cW-i4t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3JA-cg-nxo"/>
+                                <exclude reference="Irx-1I-ugT"/>
+                                <exclude reference="f61-jb-qMp"/>
+                                <exclude reference="jnW-Rr-pgx"/>
+                                <exclude reference="lMA-Mq-3fG"/>
+                                <exclude reference="pA8-cW-i4t"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="3JA-cg-nxo"/>
+                                <include reference="Irx-1I-ugT"/>
+                                <include reference="jnW-Rr-pgx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="f61-jb-qMp"/>
+                                <include reference="lMA-Mq-3fG"/>
+                                <include reference="pA8-cW-i4t"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="rectanImage" destination="RiQ-Fg-ZDr" id="ASQ-Ue-xbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

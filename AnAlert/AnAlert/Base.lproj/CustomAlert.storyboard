@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CustomAlert-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlert" title="CustomAlert" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CustomAlert" customModule="AnAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gHW-6E-hhs">
+                                <rect key="frame" x="40" y="-273.5" width="334" height="1453"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título de la alerta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d60-Gl-lKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35P-RC-pYH">
+                                        <rect key="frame" x="0.0" y="31" width="334" height="1391"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Hola, este es sólo un mensaje para descartar!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-OS-xUi">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="1391"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cjN-OS-xUi" firstAttribute="leading" secondItem="35P-RC-pYH" secondAttribute="leading" id="753-6B-F8l"/>
+                                            <constraint firstAttribute="bottom" secondItem="cjN-OS-xUi" secondAttribute="bottom" id="Mhf-kJ-1Hy"/>
+                                            <constraint firstItem="cjN-OS-xUi" firstAttribute="centerX" secondItem="35P-RC-pYH" secondAttribute="centerX" id="ZcB-Iu-jdK"/>
+                                            <constraint firstAttribute="trailing" secondItem="cjN-OS-xUi" secondAttribute="trailing" id="gnF-QK-b6D"/>
+                                            <constraint firstItem="cjN-OS-xUi" firstAttribute="centerY" secondItem="35P-RC-pYH" secondAttribute="centerY" id="wGu-HH-AQ0"/>
+                                            <constraint firstItem="cjN-OS-xUi" firstAttribute="top" secondItem="35P-RC-pYH" secondAttribute="top" id="wa5-7u-7MS"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="zI7-YA-X4l"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="ciP-HJ-1ev"/>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myh-jB-qjx">
+                                        <rect key="frame" x="0.0" y="1422" width="334" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Myh-jB-qjx" firstAttribute="centerX" secondItem="gHW-6E-hhs" secondAttribute="centerX" id="2OZ-SV-sqD"/>
+                                    <constraint firstAttribute="trailing" secondItem="35P-RC-pYH" secondAttribute="trailing" id="4xx-PC-jo3"/>
+                                    <constraint firstItem="35P-RC-pYH" firstAttribute="centerX" secondItem="gHW-6E-hhs" secondAttribute="centerX" id="GtS-vD-Yeh"/>
+                                    <constraint firstItem="d60-Gl-lKa" firstAttribute="centerX" secondItem="gHW-6E-hhs" secondAttribute="centerX" id="J2L-KF-9N2"/>
+                                    <constraint firstItem="d60-Gl-lKa" firstAttribute="top" secondItem="gHW-6E-hhs" secondAttribute="top" id="Ybm-Sw-LKS"/>
+                                    <constraint firstItem="35P-RC-pYH" firstAttribute="centerY" secondItem="gHW-6E-hhs" secondAttribute="centerY" id="dGJ-xB-Eq8"/>
+                                    <constraint firstItem="Myh-jB-qjx" firstAttribute="top" secondItem="35P-RC-pYH" secondAttribute="bottom" id="gEp-yM-zjT"/>
+                                    <constraint firstItem="35P-RC-pYH" firstAttribute="top" secondItem="d60-Gl-lKa" secondAttribute="bottom" id="geH-aA-bcP"/>
+                                    <constraint firstItem="35P-RC-pYH" firstAttribute="leading" secondItem="gHW-6E-hhs" secondAttribute="leading" id="odD-Ig-Yuy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Myh-jB-qjx" secondAttribute="bottom" id="uLa-Hi-134"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gHW-6E-hhs" secondAttribute="trailing" constant="40" id="6ie-tM-Owy"/>
+                            <constraint firstItem="gHW-6E-hhs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="7K7-Sb-HPh"/>
+                            <constraint firstItem="gHW-6E-hhs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="aN6-pb-zIN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="cjN-OS-xUi" id="0DI-Nh-2XG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
